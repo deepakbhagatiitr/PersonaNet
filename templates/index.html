@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Real-Time Object Detection</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #00d2b6; /* Greenish color */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+            margin-bottom: 40px;
+        }
+
+        /* Video container */
+        .video-container {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .video-container h2 {
+            font-size: 1.8rem;
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        #video-feed {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            font-size: 0.9rem;
+            color: #bbbbbb;
+        }
+
+        footer a {
+            color: #00d2b6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile-friendly */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .video-container {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>YOLO Real-Time Object Detection</h1>
+    <p>Detect objects in real-time with YOLO</p>
+
+    <div class="video-container">
+        <h2>Live Video Feed</h2>
+        <img id="video-feed" src="/video_feed" alt="Live Video Feed">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 YOLO Real-Time Object Detection. All Rights Reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>
